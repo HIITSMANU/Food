@@ -1,0 +1,50 @@
+.varities{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.varities h1{
+    color: gray;
+    font-weight: 500;
+}
+.var_text{
+    max-width: 50%;
+    columns: #808080;
+}
+
+.item_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.3%;
+    text-align: center;
+    margin: 10px 0px;
+    overflow-x: scroll ;
+}
+
+.item_menu::-webkit-scrollbar{
+    display: none;
+}
+
+.list_item img{
+    width: 7vw;
+    min-width: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.list_item p{
+    color: gray;
+    font-weight: 400;
+    /* width: max(0.1vw,16px); */
+}
+
+.list_item .active{
+    border: 4px solid rgb(243, 40, 4);
+    /* padding: 2px; */
+    transition: 0.2s;
+}
+
+
+
