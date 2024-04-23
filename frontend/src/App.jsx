@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
-        <Route path='/place' element={<PlaceOrder/>}></Route>
+        <Route path='/order' element={<PlaceOrder/>}></Route>
       </Routes>
       </div>
       </>
