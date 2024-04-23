@@ -1,12 +1,13 @@
 import React from 'react'
 import search from "../../assets/search_icon.png"
 import basket from "../../assets/basket_icon.png"
+import {Link} from "react-router-dom"
 const Navbar = ({setShowLogin}) => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <Link to={'/'} class="navbar-brand" href="#">Navbar</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,7 +27,7 @@ const Navbar = ({setShowLogin}) => {
         </li>
       </ul>
       <form class="d-flex">
-        <span><img src={search} alt="" width={20} style={{margin:15}} /></span><img width={30} height={30} src={basket} style={{margin:10}} alt="" />
+        <span><img src={search} alt="" width={20} style={{margin:15}} /></span><Link to={'/cart'}><img width={30} height={30} src={basket} style={{margin:10}} alt="" /></Link>
         <button onClick={() => setShowLogin(true)} class="btn btn-outline-success">SignIn</button>
       </form>
     </div>
