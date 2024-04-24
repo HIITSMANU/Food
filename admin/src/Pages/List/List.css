@@ -1,0 +1,15 @@
+.list_format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    border: 2px solid gray;
+    font-size: 15px;
+}
+.list_format .title{
+    background-color: whitesmoke;
+}
+.list_format img{
+    width: 50px;
+}

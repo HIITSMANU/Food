@@ -2,12 +2,13 @@ import React from 'react'
 import search from "../../assets/search_icon.png"
 import basket from "../../assets/basket_icon.png"
 import {Link} from "react-router-dom"
+import { assets } from '../../assets/assets'
 const Navbar = ({setShowLogin}) => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <Link to={'/'} class="navbar-brand" href="#">Navbar</Link>
+    <Link to={'/'} class="navbar-brand" href="#"><img width={100} src={assets.Hunger} alt="" /></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,13 +18,13 @@ const Navbar = ({setShowLogin}) => {
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#dish">Dishes Avaliable</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#mobile">Mobile App</a>
         </li>
       </ul>
       <form class="d-flex">

@@ -16,6 +16,7 @@ app.get("/",(req,res)=>{
     res.send("Hello User")
 })
 
+//db connection 
 connectDB();
 
 //api end points
@@ -27,4 +28,3 @@ app.listen(port,()=>{
     console.log(`Server running on ${port}`);
 })
 
-//db connection 
