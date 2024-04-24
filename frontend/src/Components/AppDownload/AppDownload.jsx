@@ -4,7 +4,7 @@ import "./AppDownload.css"
 
 const AppDownload = () => {
   return (
-    <div className='get_app'>
+    <div className='get_app' id='mobile'>
         <p>For Better Experience Download <br /> HungerEats App</p>
       <div className="platforms">
         <img src={assets.play_store} alt="" />
