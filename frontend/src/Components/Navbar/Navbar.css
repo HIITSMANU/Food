@@ -1,0 +1,38 @@
+.navbar_profile{
+    position: relative;
+    margin: 10px;
+}
+.nav_drop{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar_profile:hover .nav_drop{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 4px ;
+    border: 3px solid tomato;
+    list-style: none;
+    outline: 2px solid white;
+    background-color: antiquewhite;
+}
+.nav_drop li{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    cursor: pointer;
+}
+
+.navbar_profile p{
+    font-size: 16px;
+    font-weight: bold;  
+}
+
+.nav_drop img{
+    width: 20px;
+}
+.nav_drop li:hover{
+    color: tomato;
+}

@@ -9,7 +9,15 @@ export const StoreContextProvider = (props) => {
 
     const [cartItem , setCartItem] = useState({});
     const [food_list,setFoodlist] = useState([]);
+    const [logindata,setlogindata] = useState([])
     const url = "http://localhost:4000";
+    const [token,settoken] = useState("")
+
+    const fetchLoginData = async() => {
+        const res = await axios.get(url+"/api/user/login")
+        console.log(res.data);
+        setlogindata(res.data)
+    } 
 
 
     const  fetchFoodList = async() =>{
@@ -41,12 +49,22 @@ export const StoreContextProvider = (props) => {
         return total;
     }
 
+    // useEffect(()=>{
+    //     if(localStorage.getItem("token")){
+    //         settoken(localStorage.getItem("token"))
+    //     }
+    // },[])
+
     useEffect(()=>{
         async function loadData(){
             await fetchFoodList()
+            await fetchLoginData()
+            if(localStorage.getItem("token")){
+                settoken(localStorage.getItem("token"))
+            }
         }
         loadData()
-    },[cartItem])
+    },[])
 
     const contextValue = {
         food_list,
@@ -55,7 +73,10 @@ export const StoreContextProvider = (props) => {
         addtoCart,
         removefromCart,
         totalCartAmount,
-        url
+        url,
+        token,
+        settoken,
+        logindata
     }
 
     return (
