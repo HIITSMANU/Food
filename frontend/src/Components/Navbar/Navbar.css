@@ -1,0 +1,124 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar-links .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.icon-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+} */
+
+
+
+
+/* General navbar styles */
+.navbar {
+    background-color: #007bff; /* A pleasant blue shade */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Soft shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white !important;
+    transition: color 0.2s ease; /* Smooth transition for text color */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255,255,255,0.5); /* Lighter border for the toggle button */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255,255,255, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  
+  /* Hover effects */
+  .nav-link:hover, .navbar-brand:hover {
+    color: #a1cbef !important; /* Lighter blue on hover */
+  }
+  
+  /* Active link styling */
+  .nav-link.active {
+    font-weight: bold;
+    color: #ffd700 !important; /* Gold color for the active link */
+  }
+  
+  /* Search and basket icons */
+  .icon-button img {
+    transition: transform 0.2s ease; /* Smooth transform transition */
+  }
+  
+  .icon-button:hover img {
+    transform: scale(1.1); /* Slightly larger on hover */
+  }
+  
+  /* Cart counter */
+  .cart-counter {
+    background-color: #ff4500; /* Vivid orange background */
+    color: white;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease; /* Smooth transform transition */
+  }
+  
+  .cart-counter:hover {
+    transform: scale(1.2); /* Slightly larger on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      margin-top: 15px;
+    }
+  }
