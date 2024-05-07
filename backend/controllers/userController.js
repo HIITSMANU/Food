@@ -2,7 +2,7 @@ import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import validator from "validator";
-import { useState } from "react";
+// import { useState } from "react";
 
 //login user
 
