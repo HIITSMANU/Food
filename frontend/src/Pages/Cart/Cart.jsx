@@ -23,7 +23,7 @@ const Cart = () => {
                 <p>${item.price}</p>
                 <p>{item.description}</p>
                 <p>Quantity : {cartItem[item._id]}</p>
-                <p>Total Price : ${item.price * cartItem[item._id]}</p>
+                <p className='green_amount'>Total Price : ${item.price * cartItem[item._id]}</p>
                 <button onClick={()=> removefromCart(item._id)}>Remove from the Cart</button>
               </div>
             </div>
@@ -51,15 +51,19 @@ const Cart = () => {
           </div>
           <button onClick={()=> navigate('/order')}>PROCEED TO CHECKOUT</button>
         </div>
-        <div className="coupon">
-          <div>
-            <p>If you have a coupon apply here</p>
-            <div className="coupon_input">
-              <input type="text" placeholder='Enter Coupon here' />
-              <button>Submit</button>
+        <div className="cartitem_promocode">
+              <p>Coupon</p>
+              <p>If you have a promo code, enter it here:</p>
+              <div className="cartitem_promobox">
+                <input
+                  type="text"
+                  placeholder="Enter promo code"
+                  // value={promoCode}
+                  // onChange={(e) => setPromoCode(e.target.value)}
+                />
+                <button>Apply</button>
+              </div>
             </div>
-          </div>
-        </div>
       </div>
     </div>
   )
