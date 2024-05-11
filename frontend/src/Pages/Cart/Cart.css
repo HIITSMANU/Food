@@ -49,6 +49,8 @@
 .cart_totals {
   display: flex;
   margin-top: 80px;
+  flex-wrap: wrap;
+    
   gap: max(12vw, 20px);
   justify-content: space-between;
 }

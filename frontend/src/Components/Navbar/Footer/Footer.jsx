@@ -9,13 +9,13 @@ const Footer = () => {
         <img src="logo.png" alt="hunger eats" />
       </div> */}
         <div className="footer-columns">
-          <div className="footer-column">
-            <img src={logo} alt="hunger eats" width={300} />
-            <div>
-              <p>Follow us:</p>
-              {/* use social media symbols */}
-            </div>
-          </div>
+        <div className="foot_img">
+        <img src={logo} alt="hunger eats" />
+        </div>
+        <div>
+          <hr />
+        </div>
+          <div className="foot_contents">
           <div className="footer-column">
             <h3>Need Help</h3>
             <a href="#">Contact Us</a><br />
@@ -41,6 +41,7 @@ const Footer = () => {
             <p>Facebook</p>
             <p>Twitter</p>
             <p>Instagram</p>
+          </div>
           </div>
         </div>
         <div>

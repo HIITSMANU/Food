@@ -88,15 +88,15 @@ const PlaceOrder = () => {
           <div className="form-row">
             <div className="form-group col-md-6">
               <label htmlFor="inputCity">City</label>
-              <input onChange={onChangeHandler} name='city' value={data.city} type="text" className="form-control" id="inputCity" />
+              <input onChange={onChangeHandler} name='city' value={data.city} type="text" className="form-control" id="inputCity" placeholder="Enter Your City" />
             </div>
             <div className="form-group col-md-4">
               <label htmlFor="inputState">State</label>
-              <input onChange={onChangeHandler} name='state' value={data.state} type="text" className="form-control" id="inputState" />
+              <input onChange={onChangeHandler} name='state' value={data.state} type="text" className="form-control" id="inputState" placeholder="Enter Your State" />
             </div>
             <div className="form-group col-md-2">
               <label htmlFor="inputcountry">Country</label>
-              <input onChange={onChangeHandler} name='country' value={data.country} type="text" className="form-control" id="inputcountry" />
+              <input onChange={onChangeHandler} name='country' value={data.country} type="text" className="form-control" id="inputcountry" placeholder="Enter Your Country" />
             </div>
             <div className="form-group col-md-2">
               <label htmlFor="inputZip">Zip</label>
@@ -104,7 +104,7 @@ const PlaceOrder = () => {
             </div>
             <div className="form-group col-md-2">
               <label htmlFor="phone">Phone</label>
-              <input onChange={onChangeHandler} name='phone' value={data.phone} type="number" className="form-control" id="phone" />
+              <input onChange={onChangeHandler} name='phone' value={data.phone} type="number" className="form-control" id="phone" placeholder="Enter Your Number" />
             </div>
           </div>
       </div>
