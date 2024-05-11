@@ -27,6 +27,25 @@
   .footer-column p {
     margin: 0;
   }
-h3{
-    color: whitesmoke
-}
+  
+  h3 {
+    color: whitesmoke;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .footer-columns {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex-basis: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-column {
+      flex-basis: 100%;
+    }
+  }
