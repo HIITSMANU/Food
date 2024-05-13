@@ -10,7 +10,7 @@ export const StoreContextProvider = (props) => {
     const [cartItem , setCartItem] = useState({});
     const [food_list,setFoodlist] = useState([]);
     const [logindata,setlogindata] = useState([])
-    const url = "http://localhost:4000";
+    const url = "https://food-backend-jakf.onrender.com";
     const [token,settoken] = useState("")
 
     const fetchLoginData = async() => {

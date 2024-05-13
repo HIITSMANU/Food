@@ -8,6 +8,9 @@
     right: 0;
     z-index: 1;
 }
+.nav-item a{
+    color:black !important;
+}
 .navbar_profile:hover .nav_drop{
     display: flex;
     flex-direction: column;
@@ -35,4 +38,10 @@
 }
 .nav_drop li:hover{
     color: tomato;
+}
+/* Navbar.css */
+
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    background-color: white !important;
 }

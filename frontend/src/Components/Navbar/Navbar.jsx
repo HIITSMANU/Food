@@ -20,17 +20,17 @@ const Navbar = ({setShowLogin}) => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <Link to={'/'} class="navbar-brand" href="#"><img width={110} src={assets.logo_dup} alt="" /></Link>
+    <Link to={'/'} class="navbar-brand" href="#"><img  width={110} src={assets.logo_dup} alt="" /></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link to={'/'} class="nav-link active" aria-current="page" href="#">Home</Link>
+          <a class="nav-link active" aria-current="page" href="#home" style={{color:"black"}}>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+          <a  style={{color:"black"}} class="nav-link active" aria-current="page" href="#menu">Menu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#dish">Dishes Avaliable</a>
@@ -46,7 +46,7 @@ const Navbar = ({setShowLogin}) => {
           <img src={assets.profile_icon} alt="" />
           <ul className="nav_drop">
           <p>Welcome {localStorage.getItem("name")}</p>
-            <li><img src={assets.bag_icon} alt="" />Orders</li>
+            <li onClick={()=> navigate('/myorders')}><img src={assets.bag_icon} alt="" />Orders</li>
             <hr />
             <li onClick={logout}><img src={assets.logout_icon} alt="" />Logout</li>
           </ul>
