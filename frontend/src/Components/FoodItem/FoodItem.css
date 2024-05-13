@@ -67,3 +67,22 @@
     border-radius: 50px;
     background-color: white;
 }
+
+.red-toast {
+    background-color: #ff5252; /* Red background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    position: fixed; /* Fixed position to make it appear at the top */
+    top: 20px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 999; /* Ensure it's above other content */
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.3s ease-in-out; /* Fade in/out effect */
+}
+
+/* Optional: Add hover effect */
+.red-toast:hover {
+    opacity: 0.9; /* Reduce opacity on hover */
+}

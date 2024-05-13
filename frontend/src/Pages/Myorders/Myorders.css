@@ -23,8 +23,9 @@
 .myorder img{
     width: 50px;
 }
-.myorder p span{
-    color: red;
+.myorder p span {
+    color: red; /* Initial color */
+    animation: colorCycle 2s infinite; /* Animation duration 2 seconds */
 }
 .myorder button{
     border: none;
@@ -45,3 +46,12 @@
         font-size: 10px;
     }
 }
+@keyframes colorCycle {
+    0%, 49.99% {
+        color: red; /* Red color for the first half of animation */
+    }
+    50%, 100% {
+        color: green; /* Green color for the second half of animation */
+    }
+}
+

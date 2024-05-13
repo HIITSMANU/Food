@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./Login.css"
-import { useActionData } from 'react-router-dom'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../../Context/StoreContext'
 import axios from 'axios'

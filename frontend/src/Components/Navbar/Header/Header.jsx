@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="main_header">
       <div className='header'>
-      <video autoplay muted  loop id="header-video" controls={true}>
+      <video autoPlay muted  loop id="header-video" >
         <source src={video} type="video/mp4"/>
         Your browser does not support the video tag.
     </video>

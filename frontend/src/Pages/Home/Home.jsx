@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Header/>
       <ExploreMenu category={category} setcategory={setcategory}/>
-     {token ?  <FoodDisplay category={category}/>: <></>}
+      <FoodDisplay category={category}/>
       <AppDownload/>
     </div>
   )
