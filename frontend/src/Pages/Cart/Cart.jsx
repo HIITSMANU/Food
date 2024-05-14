@@ -7,7 +7,7 @@ const Cart = () => {
   const { cartItem, removefromCart, totalCartAmount, url, food_list, token } = useContext(StoreContext);
   const navigate = useNavigate();
   const [promoCode, setPromoCode] = useState('');
-  const discountCoupon = "qwerty123";
+  const discountCoupon = "FREEDEL5";
   const discountAmount = 5; 
 
   const isEmpty = Object.values(cartItem).every(quantity => quantity === 0);
@@ -88,19 +88,20 @@ const Cart = () => {
             <hr />
             <div className="cart_total_details">
               <p>Delivery Fee</p>
-              <p>{totalCartAmount() === 0 ? 0 : 20}</p>
+              <p>{totalCartAmount() === 0 ? 0 : 5}</p>
             </div>
             <hr />
             <div className="cart_total_details">
               <p>Total</p>
-              <p>{Math.max(0, totalCartAmount() - applyDiscount() + 20)}</p>
+              <p>{Math.max(0, totalCartAmount() - applyDiscount() + 5)}</p>
             </div>
           </div>  
           <button onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cartitem_promocode">
           <p>Coupon</p>
-          <p>If you have a promo code, enter it here:</p>
+          <p>If you have a promo code, enter it here: (Minimum Cart Value for coupon is $20)</p>
+          <p>Free Delivery on orders above $30, Enter "FREEDEL5" to avail...</p>
           <div className="cartitem_promobox">
             <input
               type="text"

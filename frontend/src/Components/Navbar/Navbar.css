@@ -19,7 +19,8 @@
     border: 3px solid tomato;
     list-style: none;
     outline: 2px solid white;
-    background-color: antiquewhite;
+    background-color: rgb(250, 248, 245);
+    width: 250px;
 }
 .nav_drop li{
     display: flex;

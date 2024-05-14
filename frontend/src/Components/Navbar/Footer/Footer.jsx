@@ -3,15 +3,22 @@ import './Footer.css';
 import logo from "../../../assets/logo_dup.png"
 
 const Footer = () => {
+  const footerLogoStyle = {
+    width: "50px",
+    height: "50px",
+    margin: "0 auto",
+    display: "block",
+    backgroundColor: "white",
+  };
   return (
     <footer className="footer">
       {/* <div className="footer-logo">
         <img src="logo.png" alt="hunger eats" />
       </div> */}
         <div className="footer-columns">
-        <div className="foot_img">
+        {/* <div className="foot_img">
         <img src={logo} alt="hunger eats" />
-        </div>
+        </div> */}
         <div>
           <hr />
         </div>
@@ -48,12 +55,19 @@ const Footer = () => {
           <hr />
         </div>
         <div>
+          <div>
           <p className="text-center">
-            &copy; {new Date().getFullYear()} Copyright: <a href="#">HungerEats</a>
+            &copy; {new Date().getFullYear()} Copyright: <a href="#home">HungerEats</a>
           </p>
+            
+          </div>
+          <div>
+
+          <img src={logo} style={footerLogoStyle}></img>
+          </div>
         </div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer;
