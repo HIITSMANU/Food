@@ -14,7 +14,7 @@ export const StoreContextProvider = (props) => {
     const [token,settoken] = useState("")
 
     const fetchLoginData = async() => {
-        const res = await axios.get(url+"/api/user/login")
+        const res = await axios.get(url+"/api/user/loginget")
         console.log(res.data);
         setlogindata(res.data)
     } 

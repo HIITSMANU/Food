@@ -11,17 +11,19 @@ import Login from './Components/Login/Login'
 import Footer from './Components/Navbar/Footer/Footer'
 import Verify from './Pages/Verify/Verify'
 import Myorders from './Pages/Myorders/Myorders'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
-
   const [showLogin , setShowLogin] = useState(false)
-
-  
-
+  const stylingLocal = {
+    width: '95%',
+    
+  }
   return (
     <>
     {showLogin?<Login setShowLogin={setShowLogin}/>:<></>}
-      <div className='app'> 
+    <ToastContainer/>
+      <div className='app' style={stylingLocal}> 
         <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
